@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "dist":"webpack -p"
+    "dist": "webpack -p"
   },
   "license": "MIT",
   "devDependencies": {
@@ -26,6 +26,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "react": "16.2.0",
-    "react-dom": "16.2.0"
+    "react-dom": "16.2.0",
+    "react-router-dom": "4.2.2"
   }
 }
