@@ -17,7 +17,7 @@ class SideNav extends React.Component{
                             </NavLink>
                         </li>
 
-                        <li class="active">
+                        <li className="active">
                             <Link to="/">
                                 <i className="fa fa-sitemap"></i>
                                 <span>商品</span>
@@ -32,9 +32,9 @@ class SideNav extends React.Component{
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li className="active">
                             <Link to="/order">
-                                <i className="fa fa-sitemap"></i>
+                                <i className="fa fa-check-square-o"></i>
                                 <span>订单</span>
                                 <span className="fa arrow"></span>
                             </Link>
@@ -44,9 +44,9 @@ class SideNav extends React.Component{
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li className="active">
                             <Link to="/user">
-                                <i className="fa fa-sitemap"></i>
+                                <i className="fa fa-user-o"></i>
                                 <span>用户</span>
                                 <span className="fa arrow"></span>
                             </Link>

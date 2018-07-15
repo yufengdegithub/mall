@@ -17,7 +17,9 @@ module.exports = {
     resolve:{
         alias:{
             page:path.resolve(__dirname, 'src/page'),
-            component:path.resolve(__dirname, 'src/component')
+            component:path.resolve(__dirname, 'src/component'),
+            util:path.resolve(__dirname, 'src/util'),
+            service:path.resolve(__dirname, 'src/service')
         }
     },
     module: {
@@ -92,6 +94,17 @@ module.exports = {
         port: 8086,
         historyApiFallback:{
             index:'/dist/index.html'
+        },
+        //将地址伪装成从target发出的请求
+        proxy : {
+            '/manage':{
+                target: 'http://admintest.happymmall.com',
+                changeOrigin:true
+            },
+            '/user/logout.do':{
+                target: 'http://admintest.happymmall.com',
+                changeOrigin:true
+            }
         }
     }
 };
