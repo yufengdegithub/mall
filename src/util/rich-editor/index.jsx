@@ -1,6 +1,7 @@
 import React from 'react';
 import Simditor  from 'simditor';
 import 'simditor/styles/simditor.scss';
+import './index.scss';
 
 class  RichEditor extends React.Component{
     constructor(props){
@@ -8,6 +9,11 @@ class  RichEditor extends React.Component{
     }
     componentDidMount(){
         this.loadEditor();
+    }
+    componentWillReceiveProps(nextProps){
+        if(this.props.defaultDetail !== nextProps.defaultDetail){
+            this.simditor.setValue(nextProps.defaultDetail);
+        }
     }
     loadEditor(){
         let element = this.refs['textarea'];

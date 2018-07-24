@@ -122,8 +122,8 @@ class ProductList extends React.Component{
                                         <button className="btn btn-xs btn-warning" onClick={(e) => {this.onSetProductStatus(e,product.id,product.status)}}>{product.status== 1 ? '下架':'上架'}</button>
                                     </td>
                                     <td>
-                                        <Link className="opear" to={'/product/detial/$(product.id)'}>查看详情</Link>
-                                        <Link className="opear" to={'/product/save/$(product.id)'}>编辑</Link>
+                                        <Link className="opear" to={`/product/detail/${product.id}`}>查看详情</Link>
+                                        <Link className="opear" to={`/product/save/${product.id}`}>编辑</Link>
                                     </td>
                                 </tr>
                             );
