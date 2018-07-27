@@ -8,7 +8,7 @@
     "dist": "WEBPACK_ENV=online node_modules/.bin/webpack -p",
     "dist_win": "set WEBPACK_ENV=online&& node_modules/.bin/webpack -p",
     "predeploy": "npm run dev",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dev"
   },
   "license": "MIT",
   "devDependencies": {
