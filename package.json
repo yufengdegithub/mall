@@ -1,14 +1,11 @@
 {
   "name": "mall",
   "version": "1.0.0",
-  "homepage": "https://yufengdegithub.github.io/mall/dist/index.html",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
     "dist": "WEBPACK_ENV=online node_modules/.bin/webpack -p",
-    "dist_win": "set WEBPACK_ENV=online&& node_modules/.bin/webpack -p",
-    "predeploy": "npm run dev",
-    "deploy": "gh-pages -d dev"
+    "dist_win": "set WEBPACK_ENV=online&& node_modules/.bin/webpack -p"
   },
   "license": "MIT",
   "devDependencies": {
